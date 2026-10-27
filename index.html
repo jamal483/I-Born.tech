@@ -1,0 +1,102 @@
+            padding: 14px 28px;
+            border-radius: 8px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .btn-secondary:hover {
+            background-color: rgba(255, 255, 255, 0.05);
+            transform: translateY(-2px);
+        }
+
+        .services {
+            padding: 80px 10%;
+            text-align: center;
+        }
+
+        .services h2 {
+            font-size: 2rem;
+            margin-bottom: 50px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background-color: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            padding: 40px 30px;
+            border-radius: 12px;
+            text-align: left;
+            transition: border-color 0.3s ease;
+        }
+
+        .card:hover {
+            border-color: rgba(59, 130, 246, 0.3);
+        }
+
+        .card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            color: #fff;
+        }
+
+        .card p {
+            color: #9ca3af;
+            font-size: 0.95rem;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.2rem; }
+            .hero p { font-size: 1rem; }
+            .cta-group { flex-direction: column; width: 100%; gap: 12px; }
+            .btn-primary, .btn-secondary { text-align: center; width: 100%; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Navigation Section -->
+    <header>
+        <div class="logo">I'Born<span>.</span></div>
+        <a href="https://google.com" target="_blank" class="btn-secondary" style="padding: 8px 16px; font-size: 0.9rem;">Client Intake</a>
+    </header>
+
+    <!-- Main Hero Landing Screen -->
+    <section class="hero">
+        <div class="badge">I'Born. Tech Staffing</div>
+        <h1>We source <span>premium tech talent</span> for early-stage startups.</h1>
+        <p>Skip the hiring friction. Get access to hyper-vetted Web/App Developers and UI/UX Designers matched to your startup sprints within 48 hours.</p>
+        <div class="cta-group">
+            <!-- Client Intake Form Link -->
+            <a href="https://google.com" target="_blank" class="btn-primary">Hire Tech Talent</a>
+            <!-- Candidate/Employee Intake Form Link -->
+            <a href="https://google.com" target="_blank" class="btn-secondary">Join Talent Network</a>
+        </div>
+    </section>
+
+    <!-- Specializations Architecture Layout -->
+    <section class="services">
+        <h2>Our Specialized Staffing Matrix</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>UI / UX Designers</h3>
+                <p>Top-tier Figma specialists, product design architects, and interactive mobile application prototyping pros built for startups.</p>
+            </div>
+            <div class="card">
+                <h3>Web Developers</h3>
+                <p>Highly scalable engineering specialists fluent in React, Next.js, Node.js, and modern lightweight web ecosystems.</p>
+            </div>
+            <div class="card">
+                <h3>App Developers</h3>
+                <p>Native and cross-platform mobile engineers building high-performance modules using Flutter, React Native, and Swift.</p>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
